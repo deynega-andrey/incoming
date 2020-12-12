@@ -1,0 +1,9 @@
+.pagination-component {
+  display: flex;
+  justify-content: flex-end;
+  height: 99px;
+  align-items: center;
+  &_right {
+    justify-content: right;
+  }
+}

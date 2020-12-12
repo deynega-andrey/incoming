@@ -1,0 +1,38 @@
+.file-uploader {
+    max-width: 384px;
+  .file-uploader__description-heading {
+    padding: 6px 0;
+    font-weight: 600;
+  }
+  .file-uploader__description-text {
+    margin-bottom: 16px;
+    color: #7E7E7E;
+  }
+  .file-dropzone {
+    display: block;
+    padding: 12px 22px 0 48px;
+    position: relative;
+    min-height: 98px;
+    width: 100%;
+    border: 1px dashed #B4B4B4;
+    outline: none;
+    // --dash-size: 4px;
+    // --gap-size: 4px;
+    color: #0062FF;
+    &:hover {
+      border-color: #0062FF;
+    }
+  }
+  .clip-icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+  }
+  .file-input {
+    display: none;
+  }
+  .file-uploader__error-message {
+    margin-top: 8px;
+    color: #D92020;
+  }
+}

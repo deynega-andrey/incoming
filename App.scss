@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+.app__table-pagination {
+  display: flex;
+  justify-content: center;
+  height: 99px;
+  align-items: center;
+  &_right {
+    justify-content: flex-end;
+  }
+}
+.app__incoming-gap {
+  height: 12px;
+}
+.app__registers-row-actions {
+  border-bottom: 1px solid #D8D8D8;
+}
+.app__main {
+  padding: 0 48px;
+  width: calc(100vw - 72px);
+}
+.app__main_extended {
+  width: calc(100vw - 288px);
+}
+.app .table .ant-table-container {
+  max-width: calc( 100vw - 72px - 30px);
+}
+.app_long .table .ant-table-container {
+  max-width: calc( 100vw - 288px - 30px);
+}

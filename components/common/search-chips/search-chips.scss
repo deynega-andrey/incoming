@@ -1,0 +1,62 @@
+.app__search-chips-search {
+  display: flex;
+}
+.app__search-chips-wrapper-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.app__search-chips-input {
+  height: 38px;
+  width: 100%;
+  padding-left: 15px;
+  border: none;
+  &_hide {
+    opacity: 0;
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 2px #0062FF solid;
+  }
+}
+.app__search-chips-search-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  &:hover {
+    * {
+      fill: #0062FF;
+      transition: 0.1s;
+    }
+  }
+}
+.app__search-chips-budge {
+  cursor: pointer;
+  padding: 10px 12.6px 0 10px;
+  &:hover {
+    * {
+      fill: #0062FF;
+      transition: 0.1s;
+    }
+  }
+}
+.app__search-chips-chips {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.app__search-chips-empty {
+  font-size: 11px;
+  line-height: 16px;
+  background: #E7E7E7;
+  width: 126px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin: 3px 0;
+}

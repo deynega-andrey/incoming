@@ -1,0 +1,27 @@
+.app__section-heading {
+  padding: 32px 0 32px 0;
+  justify-content: space-between;
+  display: flex;
+}
+.app__section-heading-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+.app__section-heading-button {
+  background: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  &:hover {
+    svg * {
+      fill: #0062FF;
+      transition: 0.1s;
+    }
+  }
+}

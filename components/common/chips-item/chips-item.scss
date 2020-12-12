@@ -1,0 +1,23 @@
+.chips {
+  position: relative;
+  padding: 3px 6px 5px 6px;
+  background-color: #E7E7E7;
+  border-radius: 14px;
+  &.chips_with-btn {
+    padding: 3px 28px 5px 6px;
+    .chips__name {
+      max-width: 70px;
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.chips__remove-btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

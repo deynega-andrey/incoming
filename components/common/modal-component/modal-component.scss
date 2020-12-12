@@ -1,0 +1,48 @@
+.app__modal-component {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__notification {
+  width: 812px;
+  background: #FFFFFF;
+  box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1), 0px 6.4px 14.4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  padding: 28px 0px 60px 40px;
+  position: relative;
+}
+.app__notification-title {
+  padding: 0 0 16px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+.app__notification-text {
+  font-size: 15px;
+  line-height: 24px;
+}
+.app__notification-block {
+  background: red;
+  border-radius: 0 0 0 8px;
+  height: 40px;
+  width: 100%;
+}
+.app__notification-cross {
+  position: absolute;
+  top: 17.3px;
+  right: 33.3px;
+  cursor: pointer;
+}
+.app__notification-p {
+  margin-bottom: 0;
+}
+.app__notification-window {
+  overflow-y: scroll;
+  width: 770px;
+  max-height: calc(85vh - 60px - 28px);
+}

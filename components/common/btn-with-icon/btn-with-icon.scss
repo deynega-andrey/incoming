@@ -1,0 +1,37 @@
+.button-with-icon {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  &[disabled] {
+    color: #B4B4B4;
+  }
+  &:not(.checkbox)[disabled] {
+    cursor: not-allowed;
+    svg * {
+      fill: #B4B4B4;
+    }
+  }
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+  svg {
+    vertical-align: text-bottom;
+  }
+  &__text {
+    margin-left: 12px;
+  }
+  &--primary:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: #0062FF;
+      svg * {
+        fill: #0062FF;
+      }
+    }
+  }
+  &.button-with-icon--with-small-icon {
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

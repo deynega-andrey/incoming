@@ -1,0 +1,27 @@
+
+.wrap-btn.switch {
+  width: 28px;
+  height: 16px;
+  position: relative;
+  border-radius: 12px;
+  background-color: #7E7E7E;
+  &--not-allowed {
+    cursor: not-allowed;
+  }
+  &--active {
+    background: #0062FF;
+  }
+  &--active .switch__toggler {
+    left: 14px;
+  }
+}
+.switch__toggler {
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: left .1s;
+}

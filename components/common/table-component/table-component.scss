@@ -1,0 +1,205 @@
+
+.ant-table {
+  border-top: 1px solid #D8D8D8;
+  overflow: auto;
+}
+.table--pensioners .ant-table {
+  max-height: calc(100vh - 100px - 80px - 99px); // - Высоты заголовка раздела, панели кнопок, пагинации
+}
+
+.table--registers .ant-table{
+  max-height: calc(100vh - 100px - 76px - 68px - 126px);
+}
+
+.ant-table .ant-table-cell {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  color: #242424;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+th .ant-table-cell {
+  cursor: pointer;
+}
+
+.table .ant-table-cell {
+  padding: 11px 14px;
+  background-color: inherit;
+}
+.table .table__item-row .ant-table-cell {
+  border: none;
+}
+.table .table__item-row:not(:last-child) .ant-table-cell:not(.table__column--fix-to-left) {
+  position: relative;
+}
+.ant-table-thead .ant-table-cell::after,
+.table .table__item-row:not(:last-child) .ant-table-cell::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+.table .ant-spin-container {
+  box-shadow: 0 1px 0 #D8D8D8;
+}
+.ant-table-thead .ant-table-cell,
+.ant-table-thead .ant-table-cell.table__column--fix-to-left {
+  border: none;
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+  background: #fff;
+}
+.ant-table .ant-table-cell.table__column--fix-to-left {
+  position: sticky;
+  left: 0;
+  z-index: 50;
+}
+.ant-table-thead .ant-table-cell {
+  z-index: 100;
+}
+.ant-table-thead .ant-table-cell.table__column--fix-to-left {
+  z-index: 150;
+}
+.ant-table-thead .ant-table-cell {
+  vertical-align: top;
+  line-height: 20px;
+  cursor: pointer;
+}
+.ant-table-cell.table__column--number {
+  text-align: right;
+}
+.ant-table-thead .table__column--separate::before {
+  content: '';
+  display: block;
+  height: 70%;
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  background-color: #D8D8D8;
+  border-radius: 10px;
+}
+.table__item-row .ant-table-cell {
+  white-space: nowrap;
+}
+.table__item-row {
+  background-color: #fff;
+}
+.table__item-row:hover {
+  background-color: #F4F4F4;
+}
+.table .ant-table-tbody > tr.ant-table-row-selected > td,
+.table .ant-table-tbody > tr.ant-table-row-selected:hover > td
+ {
+  background-color: #edf5ff;
+}
+
+/* checkbox & intermediate */
+.ant-checkbox-wrapper .ant-checkbox-inner {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border-color: #7e7e7e;
+  outline: none;
+}
+.ant-checkbox-wrapper:hover .ant-checkbox .ant-checkbox-inner {
+  border-color: #0062FF;
+}
+.ant-checkbox-wrapper:hover .ant-checkbox.ant-checkbox-checked::after {
+  display: none;
+}
+.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+  top: 46%;
+}
+.ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner,
+.ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner::after,
+.ant-checkbox-wrapper .ant-checkbox,
+.ant-checkbox-wrapper .ant-checkbox::after {
+  transition: none;
+}
+.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner::after {
+  top: 55%;
+  left: 30%;
+  width: 4px;
+  height: 6.4px;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45.2deg) scale(1.4) translate(-50%, -50%);
+}
+.ant-checkbox-wrapper .ant-checkbox .ant-checkbox-inner::after {
+  -webkit-animation: none;
+  animation: none; 
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #0062FF;
+  border-color: #0062FF;
+}
+.ant-checkbox-wrapper .ant-checkbox-checked:hover .ant-checkbox-inner,
+.ant-checkbox-wrapper .ant-checkbox-indeterminate:hover .ant-checkbox-inner {
+  background-color: #0142D3;
+  border-color: #0142D3;
+}
+.ant-checkbox-wrapper .ant-checkbox-checked:hover,
+.ant-checkbox-wrapper .ant-checkbox-indeterminate:hover {
+  border-color: #0142D3;
+}
+
+.ant-checkbox-checked .ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-indeterminate .ant-checkbox-input:focus + .ant-checkbox-inner {
+  background-color: #0142D3;
+  border-color: #0142D3;
+}
+.ant-checkbox-wrapper:hover {
+  border: none;
+}
+/*
+.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner::after {
+  top: 55%;
+  left: 30%;
+  width: 4px;
+  height: 6.4px;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45.2deg) scale(1.4) translate(-50%, -50%);
+}
+*/
+.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+  height: 1px;
+  width: 5px;
+  background-color: #fff;
+  transform: scale(1.4) translate(-38%, -50%);
+}
+// .ant-empty {
+//   position: sticky;
+//   width: 100vw;
+//   left: 0;
+// }
+.table .ant-empty.ant-empty-normal .ant-empty-image,
+.table .ant-empty.ant-empty-normal .ant-empty-description {
+  display: none;
+}
+.table .ant-empty.ant-empty-normal {
+  margin: 0;
+  height: 16px;
+}
+.table .ant-table-placeholder .ant-table-cell {
+  border: none;
+}
+.table-registers-row {
+  cursor: pointer;
+}
+/* scroll in column neading fix */
+.table__column-heading-text {
+  overflow: hidden;
+}

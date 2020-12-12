@@ -1,0 +1,24 @@
+.login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  .login__action-btn {
+    margin-top: 54px;
+    width: 100%;
+  }
+}
+.login__form-body {
+  padding: 34px 48px 50px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1.2px 3.6px rgba(0, 0, 0, 0.1), 
+  0 6.4px 14.4px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+}
+.login__inner-container {
+  width: 320px;
+}
+.login__input-wrapper {
+  margin-top: 28px;
+}

@@ -1,0 +1,22 @@
+.app__direction-payments {
+  width: 320px;
+  align-items: center;
+}
+.app__direction-payments-title {
+  color: #7E7E7E;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.app__direction-payments-wrapper-checkboxes {
+  display: flex;
+}
+.app__direction-payments-checkbox {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  margin-right: 18px;
+}
+.app__direction-payments-text {
+  margin-left: 7px;
+}

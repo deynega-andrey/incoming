@@ -1,0 +1,33 @@
+.app__chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.app__chip {
+  padding: 4.3px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  background: #E7E7E7;
+  font-size: 11px;
+  line-height: 16px;
+  min-width: 48px;
+  max-width: 162px;
+  margin: 3px 0 3px 6px;
+}
+.app__chip-remove {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.app__chip-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 128px;
+  margin-right: 6px;
+}

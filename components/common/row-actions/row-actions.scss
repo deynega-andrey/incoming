@@ -1,0 +1,75 @@
+.app__row-actions {
+  display: flex;
+  padding: 13px 28.36px 8px 8px;
+  background: #FFFFFF;
+  justify-content: space-between;
+  &_with-input {
+    padding: 10px 13.36px 10px 8px;
+  }
+}
+.app__row-actions-wrapper {
+  margin-right: 10px;
+}
+.app__row-actions-button {
+  background: none;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &_disabled {
+    color: #B4B4B4;
+    cursor: default;
+    svg * {
+      fill: #B4B4B4;
+    }
+  }
+  &_hover {
+    &:hover {
+      color: #0062FF;
+      svg * {
+        fill: #0062FF;
+      }
+    }
+  }
+}
+.app__row-actions-side {
+  display: flex;
+}
+.app__row-actions-icon {
+  cursor: pointer;
+  &:hover {
+    svg * {
+      fill: #0062FF;
+    }
+  }
+}
+.app__row-actions-wrapper-input {
+  padding-left: 6px;
+  width: 100%;
+  position: relative;
+}
+.app__row-actions-input {
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px #0062FF solid;
+  &:focus {
+    outline: none;
+  }
+}
+.app__row-actions-text {
+  margin-left: 5px;
+}
+.app__row-actions-input-icon {
+  position: absolute;
+  right: 15px;
+  top: 13.35px;
+  cursor: pointer;
+  &:hover {
+    svg * {
+      fill: #0062FF;
+    }
+  }
+}

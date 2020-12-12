@@ -1,0 +1,48 @@
+.settings {
+  height: 100%;
+}
+.settings__action-btns-container {
+  padding: 10px 8px;
+}
+.settings__fields-container {
+  height: calc(100vh - 142px);
+  padding: 12px 0 0 14px;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid transparent;
+  overflow-y: auto;
+}
+.settings__field-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 15px;
+  .settings__field-description {
+    width: 470px;
+    margin-right: 24px;
+  }
+  .settings__input {
+    padding: 9px 16px 10px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    -moz-appearance: textfield; 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    &:focus {
+      padding: 9px 16px 9px;
+      border: 1px solid #D8D8D8;
+      border-bottom: 2px solid #0062FF;
+      border-radius: 4px 4px 0 0;
+      outline: none;
+    }
+  }
+  &:last-child {
+    margin-bottom: auto;
+  }
+}
+.info-message-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}

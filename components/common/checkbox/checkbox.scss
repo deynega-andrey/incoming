@@ -1,0 +1,19 @@
+.checkbox {
+  &:hover,
+  &:focus {
+    .icon-border {
+      stroke: #0062FF;
+    }
+    .background {
+      fill: #0142D3;
+    }
+  }
+  &[disabled] {
+    .icon-border {
+      stroke: #B4B4B4;
+    }
+    .background {
+      fill: #B4B4B4;
+    }
+  }
+}

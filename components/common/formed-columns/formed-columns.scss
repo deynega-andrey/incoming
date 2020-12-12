@@ -1,0 +1,28 @@
+.app {
+  &__table {
+    &-header {
+      &-icon {
+        position: absolute;
+        top: 11px;
+        right: 15px;
+        &_blue {
+          svg * {
+            fill: #0062FF;
+          }
+        }
+      }
+      &-text {
+        padding-right: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow-y: hidden;
+      }
+      &-wrapper {
+        &_rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

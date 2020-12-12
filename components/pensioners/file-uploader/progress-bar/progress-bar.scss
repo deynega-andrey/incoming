@@ -1,0 +1,42 @@
+.progress-bar {
+  margin-top: 12px;
+}
+.progress-bar__item-body {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 32px;
+  width: 100%;
+  padding: 0 20px 0 12px;
+  position: relative;
+  background-color: #E7E7E7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-bar__load-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #B6F1C9;
+  transition: width 0.7s;
+}
+.progress-bar__item-remove-btn {
+  margin: 0;
+  z-index: 50;
+  svg {
+    vertical-align: middle;
+  }
+}
+.progress-bar__file-name {
+  max-width: 300px;
+  margin: auto 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 50;
+}
+.progress-bar__error-icon {
+  margin: auto 5px auto auto;
+}

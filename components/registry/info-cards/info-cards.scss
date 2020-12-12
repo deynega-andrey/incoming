@@ -1,0 +1,32 @@
+.app__info-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.app__info-card {
+  background: #FFFFFF;
+  height: 48px;
+  padding-left: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &_short {
+    width: 200px;
+  }
+  &_long {
+    width: 340px;
+  }
+}
+.app__info-card-wrapper {
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+.app__info-card-value {
+  font-size: 13px;
+  color: #242424;
+  margin-bottom: 2px;
+  height: 16px;
+}
+.app__info-card-label {
+  font-size: 11px;
+  color: #7E7E7E;
+}
